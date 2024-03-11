@@ -14,10 +14,11 @@
 
 **반드시 metallb-system 네임스페이스에 설치해야 함 - 권장됨**
 
-1. helm 설치
+1. helm 설치 및 레포지토리 추가
 
 ```bash
 brew install helm
+helm repo add metallb https://metallb.github.io/metallb
 ```
 
 2. kube-system 네임스페이스의 kube-proxy config 설정 변경
